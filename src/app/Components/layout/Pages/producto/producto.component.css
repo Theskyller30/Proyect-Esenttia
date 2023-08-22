@@ -1,332 +1,245 @@
-    * {
-        margin: 0;
-        padding: 0;
+/* Import the Google Font 'Lato' */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Container styles */
+
+body {
+    color: #ffffff;
+    font-family: 'Lato';
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #f0f0f0;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+.bodyview {
+    height: 650px;
+    background: #0073FF;
+    padding-left: 6%;
+}
+
+.container {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.chart {
+    position: relative;
+    display: inline-block;
+    color: #FF0041;
+    font-size: 20px;
+    font-weight: 500;
+    vertical-align: text-top;
+}
+
+.textu {
+    color: #0073FF;
+}
+
+.chart figcaption {
+    padding: 50px 25px;
+    width: 100px;
+    height: 50px;
+    border: 20px solid #f0f0f0;
+    border-radius: 100px;
+    line-height: 50px;
+    font-size: 2em;
+}
+
+.chart div {
+    max-width: 200px;
+    max-height: 100px;
+    border-radius: 15px;
+    background: white;
+    margin: 0 auto;
+    padding: 10px 0;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+
+/* END Container styles */
+
+
+/* Colors for the circles and positions for the graphics */
+
+.html {
+    top: 50px;
+    left: 45px;
+}
+
+.html+svg .outer {
+    stroke: class="textu";
+}
+
+.css {
+    top: 55px;
+    left: 48px;
+}
+
+.css+svg .outer {
+    stroke: #0d84ce;
+}
+
+.javascript {
+    max-width: 90px;
+    max-height: 90px;
+    top: 45px;
+    left: 45px;
+}
+
+.javascript+svg .outer {
+    stroke: #f0e040;
+}
+
+.node {
+    width: 200px;
+    height: 200px;
+    top: 45px;
+    left: 45px;
+}
+
+.node+svg .outer {
+    stroke: #83cd29;
+}
+
+.chart svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.outer {
+    fill: transparent;
+    stroke: #FF0041;
+    stroke-width: 20;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    /* firefox bug fix - won't rotate at 90deg angles */
+    -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+.chart:hover .outer {
+    stroke-dashoffset: 534 !important;
+    -webkit-animation-play-state: paused;
+}
+
+
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+
+.chart[data-percent='100'] .outer {
+    stroke-dashoffset: 0;
+    -webkit-animation: show100 2s;
+    animation: show100 2s;
+}
+
+.chart[data-percent='75'] .outer {
+    stroke-dashoffset: 133;
+    -webkit-animation: show75 2s;
+    animation: show75 2s;
+}
+
+.chart[data-percent='50'] .outer {
+    stroke-dashoffset: 267;
+    -webkit-animation: show50 2s;
+    animation: show50 2s;
+}
+
+.chart[data-percent='25'] .outer {
+    stroke-dashoffset: 401;
+    -webkit-animation: show25 2s;
+    animation: show25 2s;
+}
+
+
+/* END set initial animation values */
+
+
+/* Keyframes for the initial animation */
+
+@-webkit-keyframes show100 {
+    from {
+        stroke-dashoffset: 537;
     }
-    
-    body {
-        background: #E4E4E4;
-        height: 450px;
+    to {
+        stroke-dashoffset: 0;
     }
-    
-    .full {
-        max-width: 700px;
-        position: relative;
-        margin: 0 auto;
-        padding-left: 10%;
+}
+
+@keyframes show100 {
+    from {
+        stroke-dashoffset: 537;
     }
-    
-    .main-title {
-        position: absolute;
-        border-left: solid 5px #333;
-        padding-left: 10px;
-        color: #333;
-        margin: 0 20px 20px 20px;
-        font-family: Impact, serif;
-        font-weight: normal;
-        text-transform: uppercase;
-        line-height: 1;
-        top: 0;
+    to {
+        stroke-dashoffset: 0;
     }
-    
-    .main-title span {
-        display: block;
+}
+
+@-webkit-keyframes show75 {
+    from {
+        stroke-dashoffset: 537;
     }
-    
-    .main-title a {
-        color: inherit;
+    to {
+        stroke-dashoffset: 134;
     }
-    
-    .main-title span {
-        margin-bottom: 0;
+}
+
+@keyframes show75 {
+    from {
+        stroke-dashoffset: 537;
     }
-    
-    .main-title .span1 {
-        font-size: 29px;
+    to {
+        stroke-dashoffset: 124;
     }
-    
-    .main-title .span2 {
-        font-size: 45px;
+}
+
+@-webkit-keyframes show50 {
+    from {
+        stroke-dashoffset: 537;
     }
-    
-    .main-title .span3 {
-        font-size: 11px;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
-        text-transform: none;
-        font-weight: normal;
+    to {
+        stroke-dashoffset: 267;
     }
-    
-    figure {
-        margin: 0;
+}
+
+@keyframes show50 {
+    from {
+        stroke-dashoffset: 537;
     }
-    
-    .container {
-        width: 500px;
-        height: 300px;
-        position: relative;
-        margin: 50px auto;
-        -webkit-perspective: 4000px;
-        -webkit-transform-style: preserve-3d;
-        -moz-perspective: 4000px;
-        -moz-transform-style: preserve-3d;
-        -webkit-animation: rotateChart 20s linear;
-        -webkit-animation-fill-mode: forwards;
-        -moz-animation: rotateChart 20s linear;
-        -moz-animation-fill-mode: forwards;
+    to {
+        stroke-dashoffset: 267;
     }
-    
-    @-moz-keyframes rotateChart
-    /* Safari and Chrome */
-    
-    {
-        0% {
-            -moz-transform: rotateX(0deg) rotateY(-20deg);
-        }
-        100% {
-            -moz-transform: rotateX(0deg) rotateY(-380deg);
-        }
+}
+
+@-webkit-keyframes show25 {
+    from {
+        stroke-dashoffset: 537;
     }
-    
-    @-webkit-keyframes rotateChart
-    /* Safari and Chrome */
-    
-    {
-        0% {
-            -webkit-transform: rotateX(0deg) rotateY(-20deg);
-        }
-        100% {
-            -webkit-transform: rotateX(0deg) rotateY(-380deg);
-        }
+    to {
+        stroke-dashoffset: 401;
     }
-    
-    .persp1,
-    .persp2,
-    .persp3,
-    .persp4,
-    .persp5 {
-        position: absolute;
-        width: 100px;
-        bottom: 0;
-        -webkit-transform-style: preserve-3d;
-        -moz-transform-style: preserve-3d;
-        z-index: 99;
+}
+
+@keyframes show25 {
+    from {
+        stroke-dashoffset: 537;
     }
-    
-    .persp1 {
-        height: 70%;
+    to {
+        stroke-dashoffset: 401;
     }
-    
-    .persp2 {
-        height: 50%;
-    }
-    
-    .persp3 {
-        height: 35%;
-    }
-    
-    .persp4 {
-        height: 30%;
-    }
-    
-    .persp5 {
-        height: 17%;
-    }
-    
-    .face {
-        position: absolute;
-    }
-    
-    .data-y {
-        background: none!important;
-        font-size: 22px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        color: #FFF;
-        text-align: center;
-        text-shadow: 1px 1px #666;
-        -webkit-transform: translateZ(1px);
-        -moz-transform: translateZ(1px);
-    }
-    
-    .data-x {
-        background-image: url(http://www.heloisabiagi.com/media/charts01-social.png);
-        background-repeat: no-repeat;
-        background-color: #FFF!important;
-        -webkit-transform-origin: top left;
-        -webkit-transform: rotateX(90deg);
-        -moz-transform-origin: top left;
-        -moz-transform: rotateX(90deg);
-        top: 100%;
-    }
-    
-    .persp1 .data-x {
-        background-position: 0px 10px;
-    }
-    
-    .persp2 .data-x {
-        background-position: 0px -90px;
-    }
-    
-    .persp3 .data-x {
-        background-position: 0px -190px;
-    }
-    
-    .persp4 .data-x {
-        background-position: 0px -290px;
-    }
-    
-    .persp5 .data-x {
-        background-position: 0px -390px;
-    }
-    
-    .persp1 {
-        margin-left: 370px;
-    }
-    
-    .persp2 {
-        margin-left: 290px;
-    }
-    
-    .persp3 {
-        margin-left: 210px;
-    }
-    
-    .persp4 {
-        margin-left: 130px;
-    }
-    
-    .persp5 {
-        margin-left: 50px;
-    }
-    /* Faces */
-    
-    .front,
-    .left,
-    .right,
-    .back {
-        width: 50px;
-        height: 100%;
-    }
-    
-    .top,
-    .data-x,
-    .data-y {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .persp1 .face {
-        background-color: #3B5998;
-    }
-    
-    .persp2 .face {
-        background-color: #20ACFF;
-    }
-    
-    .persp3 .face {
-        background-color: #C53727;
-    }
-    
-    .persp4 .face {
-        background-color: #4393BB;
-    }
-    
-    .persp5 .face {
-        background-color: #DD4B5D;
-    }
-    /* Faces default*/
-    
-    .front {
-        opacity: 0.7;
-    }
-    
-    .left {
-        -webkit-transform: rotateY(90deg);
-        -webkit-transform-origin: top left;
-        -moz-transform: rotateY(90deg);
-        -moz-transform-origin: top left;
-        opacity: 0.7;
-    }
-    
-    .right {
-        -webkit-transform: rotateY(-90deg);
-        -webkit-transform-origin: top right;
-        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.5)), to(transparent));
-        background-image: -moz-linear-gradient(-90deg, rgba(0, 0, 0, 0.5), transparent);
-        -moz-transform: rotateY(-90deg);
-        -moz-transform-origin: top right;
-    }
-    
-    .top {
-        -webkit-transform-origin: top left;
-        -webkit-transform: rotateX(90deg) translateY(-50px);
-        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.5)));
-        -moz-transform-origin: top left;
-        -moz-transform: rotateX(90deg) translateY(-50px);
-        background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
-        z-index: 99;
-    }
-    
-    .back {
-        -webkit-transform: translateZ(-50px);
-        -moz-transform: translateZ(-50px);
-    }
-    
-    .base {
-        background-color: #FFF;
-        -webkit-transform: rotateX(90deg) translateZ(100px);
-        -moz-transform: rotateX(90deg) translateZ(100px);
-        width: 100%;
-        height: 200px;
-        -webkit-transform-style: preserve-3d;
-        -moz-transform-style: preserve-3d;
-        border-bottom: solid 3px #CCC;
-        border-right: solid 3px #CCC;
-    }
-    
-    .bars {
-        height: 100%;
-    }
-    
-    .subtitle {
-        position: relative;
-        margin: 0 auto;
-        width: 510px;
-    }
-    
-    .list-social li {
-        font-family: Arial, sans-serif;
-        list-style: none;
-        float: left;
-        margin-right: 10px;
-    }
-    
-    .list-social li:before {
-        content: '';
-        display: block;
-        float: left;
-        width: 20px;
-        height: 20px;
-        background-color: #F0F;
-        border-radius: 4px;
-        margin-right: 5px;
-    }
-    
-    .list-social li.fb:before {
-        background-color: #3B5998;
-    }
-    
-    .list-social li.twt:before {
-        background-color: #20ACFF;
-    }
-    
-    .list-social li.gp:before {
-        background-color: #C53727;
-    }
-    
-    .list-social li.lkd:before {
-        background-color: #4393BB;
-    }
-    
-    .list-social li.pin:before {
-        background-color: #DD4B5D;
-    }
+}

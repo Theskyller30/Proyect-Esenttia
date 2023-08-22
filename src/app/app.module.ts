@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-// java
-import {CargarScriptsService} from "./cargar-scripts.service";
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +24,6 @@ import { SharedModule } from './Reusable/shared/shared.module';
     SharedModule,
   ],
   providers: [
-    CargarScriptsService
   ],
   bootstrap: [AppComponent]
 })

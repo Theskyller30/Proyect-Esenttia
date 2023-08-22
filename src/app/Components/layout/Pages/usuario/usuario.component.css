@@ -1,3 +1,10 @@
+.body1 {
+    padding-top: 1%;
+    font-family: "Inter", sans-serif;
+    background-color: #0073FF;
+    height: 1200px;
+}
+
 .container {
     display: flex;
     padding-left: 25%;
@@ -6,17 +13,32 @@
 
 .card-1 {
     --color: rgb(255, 7, 110);
-    --image: url("https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900");
+    --image: url("/assets/fondo2.jpg");
 }
 
 .card-2 {
     --color: rgb(95, 0, 173);
-    --image: url("https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002533/img/basic/a0002533_main.jpg?20210122155600&q=80&rw=750&rh=536");
+    --image: url("/assets/fondo1.jpg");
 }
 
 .card-3 {
     --color: rgb(1, 19, 102);
-    --image: url("https://www.worldtravelguide.net/wp-content/uploads/2017/03/shu-Japan-Nachisan-Seiganto_189118511-1440x823-1.jpg");
+    --image: url("/assets/fondo3.jpg");
+}
+
+.card-4 {
+    --color: rgb(255, 147, 7);
+    --image: url("/assets/fondo4.jpg");
+}
+
+.card-5 {
+    --color: rgb(0, 170, 173);
+    --image: url("/assets/fondo6.jpg");
+}
+
+.card-6 {
+    --color: rgb(174, 0, 0);
+    --image: url("/assets/fondo5.jpg");
 }
 
 .card {
