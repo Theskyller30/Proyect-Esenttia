@@ -4,6 +4,22 @@
 
 /* Container styles */
 
+.grafit {
+    padding-left: 7%;
+    padding-top: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.diviporcen {
+    padding-bottom: 0px;
+    padding-top: 50px;
+    text-align: center;
+}
+
 body {
     color: #ffffff;
     font-family: 'Lato';
@@ -19,10 +35,12 @@ h3 {
     font-size: 25px;
     font-weight: 600;
     color: #f0f0f0;
+    text-align: center;
+    padding-top: 0;
 }
 
 .bodyview {
-    height: 650px;
+    height: 1600px;
     background: #0073FF;
     padding-left: 6%;
 }
@@ -39,6 +57,7 @@ h3 {
     font-size: 20px;
     font-weight: 500;
     vertical-align: text-top;
+    padding-top: 0;
 }
 
 .textu {
@@ -166,6 +185,18 @@ h3 {
     animation: show25 2s;
 }
 
+.chart[data-percent='15'] .outer {
+    stroke-dashoffset: 450;
+    -webkit-animation: show25 2s;
+    animation: show25 2s;
+}
+
+.chart[data-percent='10'] .outer {
+    stroke-dashoffset: 480;
+    -webkit-animation: show25 2s;
+    animation: show25 2s;
+}
+
 
 /* END set initial animation values */
 
@@ -241,5 +272,23 @@ h3 {
     }
     to {
         stroke-dashoffset: 401;
+    }
+}
+
+@-webkit-keyframes show15 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 450;
+    }
+}
+
+@keyframes show15 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 450;
     }
 }

@@ -8,8 +8,8 @@
 
 .road {
     color: #fff;
-    font-weight: 600;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 30px;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -107,9 +107,9 @@ hr {
 
 .timeline-article p span.article-number {
     position: absolute;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 44px;
-    top: 10px;
+    top: 0px;
     left: -60px;
     color: #FF0041;
 }
@@ -157,11 +157,11 @@ hr {
 .timeline-article .meta-date .month {
     display: block;
     text-align: center;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .timeline-article .meta-date .date {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 40px;
 }
 

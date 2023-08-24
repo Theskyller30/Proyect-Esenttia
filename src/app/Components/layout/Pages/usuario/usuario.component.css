@@ -1,8 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.BodiP {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    background: #0073FF;
+    padding-top: 0%;
+    padding-left: 18%;
+}
+
+.container {
+    height: 900px;
+    min-width: 400px;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.icon-image {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    margin: 0 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    background: #FF0041;
+}
+
+.icon-image .icon img {
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0396FF;
+}
+
+.icon-image::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+}
+
+.icon-image .hover-image {
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    bottom: 100px;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    pointer-events: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease, z-index 0s, left 0.5s ease;
+    transition-delay: 0s, 0.5s, 0.5s;
+}
+
+.icon-image:hover .hover-image {
+    left: -200px;
+    z-index: 12;
+    transform: translateX(80px);
+    transition: left 0.5s ease, z-index 0s, transform 0.5s ease;
+    transition-delay: 0s, 0.5s, 0.5s;
+}
+
+.hover-image img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 25px;
+}
+
+.hover-image .content {
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    padding: 0 10px;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    left: 50%;
+    bottom: -7px;
+    transform: rotate(45deg) translateX(-50%);
+    z-index: -1;
+}
+
+.content .details {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+}
+
+.icon-image:hover .details {
+    transition: all 0.5s ease;
+    transition-delay: 0.9s;
+    opacity: 1;
+    transform: translateY(4px);
+    pointer-events: auto;
+}
+
+.details::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    left: 50%;
+    bottom: -15px;
+    transform: rotate(45deg) translateX(-50%);
+    z-index: -1;
+}
+
+.content .details .name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content .details .job {
+    font-size: 17px;
+    color: #0396FF;
+    margin: -3px 0 5px 0;
+}
+
+.content .details a:hover {
+    color: #0396FF;
+}
+
+.container .last .hover-image {
+    transition: none;
+}
+
+.container .last:hover .hover-image {
+    transition: 0;
+}
+
+.last:hover .details {
+    transition-delay: 0s;
+}
+
+.banner {
+    color: #fff;
+    font-size: xx-large;
+    width: 100%;
+    display: flex;
+    background: #0073FF;
+    padding-top: 4%;
+    padding-left: 48%;
+}
+
+
+/* PARTE DE LA MITAD */
+
 .body1 {
-    padding-top: 1%;
-    font-family: "Inter", sans-serif;
-    background-color: #0073FF;
-    height: 1200px;
+    height: 100vh;
+    width: 100%;
+    background: #0073FF;
+    padding-top: 0%;
+    padding-left: 0%;
 }
 
 .container {
@@ -21,26 +201,6 @@
     --image: url("/assets/fondo1.jpg");
 }
 
-.card-3 {
-    --color: rgb(1, 19, 102);
-    --image: url("/assets/fondo3.jpg");
-}
-
-.card-4 {
-    --color: rgb(255, 147, 7);
-    --image: url("/assets/fondo4.jpg");
-}
-
-.card-5 {
-    --color: rgb(0, 170, 173);
-    --image: url("/assets/fondo6.jpg");
-}
-
-.card-6 {
-    --color: rgb(174, 0, 0);
-    --image: url("/assets/fondo5.jpg");
-}
-
 .card {
     position: relative;
     display: grid;
@@ -55,7 +215,7 @@
     width: 250px;
     transition: 0.5s ease;
     cursor: pointer;
-    margin: 16px;
+    margin: 100px;
     border-radius: 18px;
 }
 
@@ -124,4 +284,12 @@
 .card:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.img1 {
+    padding-top: 8%;
+    width: 500x;
+    height: 690px;
+    padding-left: 25%;
+    padding-bottom: 4%;
 }
