@@ -4,14 +4,17 @@
 
 /* Container styles */
 
-.grafit {
-    padding-left: 7%;
-    padding-top: 30px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+.timeline {
+    padding-left: 14%;
+}
+
+.road {
+    color: #1d1d1d;
+    font-weight: 600;
+    font-size: 30px;
+    padding-left: 48%;
+    padding-top: 50px;
+    padding-bottom: 0px;
 }
 
 .diviporcen {
@@ -21,27 +24,28 @@
 }
 
 body {
-    color: #ffffff;
+    color: #ff0000;
     font-family: 'Lato';
 }
 
 h2 {
     font-size: 50px;
     font-weight: 800;
-    color: #f0f0f0;
+    color: #ff0000;
 }
 
 h3 {
     font-size: 25px;
     font-weight: 600;
-    color: #f0f0f0;
+    color: #ff0000;
     text-align: center;
     padding-top: 0;
 }
 
 .bodyview {
+    padding-top: 0px;
     height: 1600px;
-    background: #0073FF;
+    background: rgb(240, 240, 240);
     padding-left: 6%;
 }
 
@@ -61,14 +65,14 @@ h3 {
 }
 
 .textu {
-    color: #0073FF;
+    color: #343434;
 }
 
 .chart figcaption {
     padding: 50px 25px;
     width: 100px;
     height: 50px;
-    border: 20px solid #f0f0f0;
+    border: 20px solid #0073ff90;
     border-radius: 100px;
     line-height: 50px;
     font-size: 2em;
@@ -146,8 +150,12 @@ h3 {
     stroke-dasharray: 534;
     transition: stroke-dashoffset 1s;
     -webkit-animation-play-state: running;
-    /* firefox bug fix - won't rotate at 90deg angles */
+    /*firefoxbugfix-won'trotateat90degangles*/
     -moz-transform: rotate(-89deg) translateX(-190px);
+    -webkit-transition: stroke-dashoffset 1s;
+    -moz-transition: stroke-dashoffset 1s;
+    -ms-transition: stroke-dashoffset 1s;
+    -o-transition: stroke-dashoffset 1s;
 }
 
 .chart:hover .outer {

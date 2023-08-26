@@ -11,10 +11,18 @@
     padding-left: 6%;
 }
 
+.road {
+    color: #1d1d1d;
+    font-weight: 800;
+    font-size: 30px;
+    padding-left: 47%;
+    padding-bottom: 20px;
+}
+
 body {
     padding-top: 4%;
     font-family: "Inter", sans-serif;
-    background-color: #0073FF;
+    background: rgb(240, 240, 240);
 }
 
 .checkbox-group {
@@ -29,7 +37,7 @@ body {
 }
 
 .checkbox-group>* {
-    margin: 0.5rem 0.9rem;
+    margin: 0.5.rem 0.9rem;
 }
 
 .checkbox-group-legend {

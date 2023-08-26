@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@700&family=Poppins:ital,wght@1,500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +7,27 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.material-symbols-outlined {
+    text-align: center;
+}
+
+body {
+    height: 180vh;
+    width: 100%;
+    background: rgb(240, 240, 240);
+    background-position: center;
+    background-size: cover;
+}
+
+h6 {
+    position: absolute;
+}
+
 .BodiP {
-    height: 50vh;
+    height: 38vh;
     width: 100%;
     display: flex;
-    background: #0073FF;
+    background: rgb(240, 240, 240);
     padding-top: 0%;
     padding-left: 18%;
 }
@@ -53,6 +70,10 @@
     left: 50%;
     top: -50px;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 .icon-image .hover-image {
@@ -68,6 +89,10 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.5s ease, z-index 0s, left 0.5s ease;
     transition-delay: 0s, 0.5s, 0.5s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 .icon-image:hover .hover-image {
@@ -165,12 +190,13 @@
 }
 
 .banner {
-    color: #fff;
+    color: #1d1d1d;
     font-size: xx-large;
     width: 100%;
     display: flex;
-    background: #0073FF;
-    padding-top: 4%;
+    background: rgb(240, 240, 240);
+    padding-top: 3%;
+    padding-bottom: 1%;
     padding-left: 48%;
 }
 
@@ -178,34 +204,39 @@
 /* PARTE DE LA MITAD */
 
 .body1 {
-    height: 100vh;
+    height: 0px;
     width: 100%;
-    background: #0073FF;
+    background: rgb(240, 240, 240);
     padding-top: 0%;
     padding-left: 0%;
 }
 
 .container {
     display: flex;
-    padding-left: 25%;
+    padding-left: 20%;
     padding-top: 3%;
 }
 
 .card-1 {
-    --color: rgb(255, 7, 110);
+    --color: rgb(101, 101, 101);
     --image: url("/assets/fondo2.jpg");
 }
 
 .card-2 {
-    --color: rgb(95, 0, 173);
+    --color: rgb(101, 101, 101);
     --image: url("/assets/fondo1.jpg");
+}
+
+.card-3 {
+    --color: rgb(101, 101, 101);
+    --image: url("/assets/fondo3.jpg");
 }
 
 .card {
     position: relative;
     display: grid;
     grid-template-columns: 250px;
-    grid-template-rows: 180px 150px 150px;
+    grid-template-rows: 180px 15px 160px;
     grid-template-areas: "image" "text" "stats";
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     border-radius: 18px;
@@ -215,7 +246,7 @@
     width: 250px;
     transition: 0.5s ease;
     cursor: pointer;
-    margin: 100px;
+    margin: 40px;
     border-radius: 18px;
 }
 
@@ -287,6 +318,7 @@
 }
 
 .img1 {
+    box-sizing: border-box;
     padding-top: 8%;
     width: 500x;
     height: 690px;

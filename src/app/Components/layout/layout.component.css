@@ -6,6 +6,22 @@
     font-family: "Poppins", sans-serif;
 }
 
+.logoEsen {
+    position: absolute;
+    /* Esto permite un posicionamiento absoluto */
+    top: 22px;
+    /* Coloca el elemento en la parte superior de su contenedor */
+    right: 635px;
+    /* Coloca el elemento en la parte izquierda de su contenedor */
+    width: 150px;
+    /* Ajusta el ancho del logo según tus necesidades */
+    height: 80px;
+    /* Ajusta la altura del logo según tus necesidades */
+    background-image: url('/assets/logoEsettia.png');
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen de fondo */
+}
+
 .full {
     max-width: 700px;
     position: relative;
@@ -16,7 +32,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background-image: url("/assets/hero-bg.jpg");
+    background: rgb(240, 240, 240);
     background-position: center;
     background-size: cover;
 }
@@ -30,7 +46,9 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.637);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(208, 208, 208, 1) 65%, rgba(0, 115, 255, 1) 100%);
     backdrop-filter: blur(17px);
     --webkit-backdrop-filter: blur(17px);
     border-right: 1px solid rgba(255, 255, 255, 0.7);
@@ -151,14 +169,8 @@ h4 {
     color: #0073FF;
 }
 
-.fotter1 {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    padding-left: 48%;
-}
-
 .material-symbols-outlined {
-    color: #FF0041;
+    color: #0073FF;
 }
 
 .container {

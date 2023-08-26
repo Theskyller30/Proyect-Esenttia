@@ -46,7 +46,7 @@ export class LoginComponent {
         next: (response) => {
           if (response.status){
             this._utilityService.guardarSesionUsuario(response.value)
-            this.router.navigate(['pages']);
+            this.router.navigate(['pages/dashboard']);
           }else{
             this._utilityService.mostrarAlerta("No se encontraron coicidencias", 'Opps!');
           }

@@ -1,23 +1,17 @@
-.body1 {
-    padding-left: 150px;
-    padding-right: 50px;
-    background-color: #0073FF;
+.body {
+    background: rgb(240, 240, 240);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    padding-left: 5%;
 }
 
 .road {
-    color: #fff;
-    font-weight: 500;
+    color: #1d1d1d;
+    font-weight: 600;
     font-size: 30px;
-    text-align: center;
-    padding-top: 30px;
+    padding-left: 38.5%;
+    padding-top: 50px;
     padding-bottom: 20px;
-}
-
-hr {
-    padding-bottom: 5px;
-    background-color: #ddd;
 }
 
 
@@ -32,18 +26,23 @@ hr {
 
 #conference-timeline .timeline-start,
 #conference-timeline .timeline-end {
+    border-radius: 12px;
     display: table;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
-    background: #FF0041;
-    padding: 15px 23px;
+    background: #0073FF;
+    padding: 12px 25px;
     color: #fff;
     max-width: 5%;
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
 }
 
 #conference-timeline .conference-center-line {
@@ -53,7 +52,7 @@ hr {
     top: 0;
     left: 50%;
     margin-left: -2px;
-    background: #FF0041;
+    background: #0073FF;
     z-index: -1;
 }
 
@@ -87,12 +86,16 @@ hr {
 
 .timeline-article .content-left,
 .timeline-article .content-right {
+    border-radius: 15px;
     position: relative;
     width: auto;
     border: 1px solid #ddd;
     background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
-    padding: 27px 25px;
+    padding: 27px 40px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .timeline-article p {
@@ -100,7 +103,7 @@ hr {
     padding: 0;
     font-weight: 400;
     color: #242424;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 24px;
     position: relative;
 }
@@ -111,7 +114,7 @@ hr {
     font-size: 44px;
     top: 0px;
     left: -60px;
-    color: #FF0041;
+    color: #0073FF;
 }
 
 .timeline-article .content-left-container {
@@ -150,7 +153,7 @@ hr {
     margin-left: -31px;
     color: #fff;
     border-radius: 100%;
-    background: #FF0041;
+    background: #0073FF;
 }
 
 .timeline-article .meta-date .date,
