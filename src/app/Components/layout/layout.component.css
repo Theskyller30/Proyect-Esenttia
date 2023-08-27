@@ -6,6 +6,27 @@
     font-family: "Poppins", sans-serif;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    /* Ajusta la altura de tu barra de navegación */
+    /* Agrega otros estilos de la barra de navegación según tus necesidades */
+    z-index: 9999;
+    /* Asegura que la barra de navegación esté encima de cualquier otro contenido */
+}
+
+
+/* Estilos para el contenido principal */
+
+.content {
+    margin-top: 60px;
+    /* Ajusta el margen superior para dejar espacio para la barra de navegación */
+    /* Agrega otros estilos de contenido principal según tus necesidades */
+}
+
 .logoEsen {
     position: absolute;
     /* Esto permite un posicionamiento absoluto */
@@ -53,6 +74,8 @@ body {
     --webkit-backdrop-filter: blur(17px);
     border-right: 1px solid rgba(255, 255, 255, 0.7);
     transition: width 0.3s ease;
+    z-index: 2;
+    /* Valor alto para que esté encima del contenido */
 }
 
 .sidebar:hover {

@@ -14,6 +14,17 @@ import { Modal2Component } from './Components/layout/Pages/modal2/modal2.compone
 import { Modal3Component } from './Components/layout/Pages/modal3/modal3.component';
 import { Modal4Component } from './Components/layout/Pages/modal4/modal4.component';
 import { KpisComponent } from './Components/layout/Pages/kpis/kpis.component';
+import { VehiculosComponent } from './Components/layout/Pages/vehiculos/vehiculos.component';
+import { PatioComponent } from './Components/layout/Pages/patio/patio.component';
+import { OperacionesComponent } from './Components/layout/Pages/operaciones/operaciones.component';
+import { ComunicacionComponent } from './Components/layout/Pages/comunicacion/comunicacion.component';
+import { Modal5Component } from './Components/layout/Pages/modal5/modal5.component';
+import { DocumentosComponent } from './Components/layout/Pages/documentos/documentos.component';
+import { SeguridadComponent } from './Components/layout/Pages/seguridad/seguridad.component';
+import { TransporteComponent } from './Components/layout/Pages/transporte/transporte.component';
+import { HseComponent } from './Components/layout/Pages/hse/hse.component';
+import { CediComponent } from './Components/layout/Pages/cedi/cedi.component';
+import { SfisicaComponent } from './Components/layout/Pages/sfisica/sfisica.component';
 
 
 
@@ -26,7 +37,18 @@ import { KpisComponent } from './Components/layout/Pages/kpis/kpis.component';
     Modal2Component,
     Modal3Component,
     Modal4Component,
-    KpisComponent
+    KpisComponent,
+    VehiculosComponent,
+    PatioComponent,
+    OperacionesComponent,
+    ComunicacionComponent,
+    Modal5Component,
+    DocumentosComponent,
+    SeguridadComponent,
+    TransporteComponent,
+    HseComponent,
+    CediComponent,
+    SfisicaComponent
   ],
   imports: [
     BrowserModule,

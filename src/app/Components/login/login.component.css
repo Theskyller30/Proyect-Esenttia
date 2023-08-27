@@ -55,6 +55,9 @@ body {
 
 .cover .back {
     transform: rotateY(180deg);
+}
+
+.container .cover {
     backface-visibility: hidden;
 }
 
@@ -64,7 +67,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #5b5b5b;
+    background: #4a4a4a6d;
     opacity: 0.5;
     z-index: 12;
 }
@@ -96,11 +99,12 @@ body {
 
 .cover .text .text-1,
 .cover .text .text-2 {
-    padding-block: 5px;
+    padding-block: 0px;
     font-size: 26px;
     font-weight: 600;
     color: #fff;
     text-align: center;
+    line-height: 1.6rem;
 }
 
 .cover .text .text-2 {
@@ -129,14 +133,14 @@ body {
     position: relative;
     font-size: 24px;
     font-weight: 500;
-    color: #FF0041;
+    color: #0073FF;
     padding-bottom: 10px;
 }
 
 .text {
     font-size: 14px;
     font-weight: 500;
-    color: #FF0041;
+    color: #0073FF;
 }
 
 .forms .form-content .title:before {
@@ -173,7 +177,7 @@ body {
     padding: 0 30px;
     font-size: 16px;
     font-weight: 500;
-    border-bottom: 2px solid rgba(255, 0, 65);
+    border-bottom: 2px solid rgb(144, 144, 144);
     transition: all 0.3s ease;
 }
 
@@ -191,7 +195,7 @@ body {
 .forms .form-content .text {
     font-size: 14px;
     font-weight: 500;
-    color: #FF0041;
+    color: #4a4a4a;
 }
 
 .forms .form-content .text a {

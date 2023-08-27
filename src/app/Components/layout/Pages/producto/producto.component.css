@@ -31,15 +31,7 @@ body {
 h2 {
     font-size: 50px;
     font-weight: 800;
-    color: #ff0000;
-}
-
-h3 {
-    font-size: 25px;
-    font-weight: 600;
-    color: #ff0000;
-    text-align: center;
-    padding-top: 0;
+    color: #0073FF;
 }
 
 .bodyview {
@@ -57,7 +49,7 @@ h3 {
 .chart {
     position: relative;
     display: inline-block;
-    color: #FF0041;
+    color: #0073FF;
     font-size: 20px;
     font-weight: 500;
     vertical-align: text-top;
@@ -65,7 +57,7 @@ h3 {
 }
 
 .textu {
-    color: #343434;
+    color: #030303;
 }
 
 .chart figcaption {
@@ -82,7 +74,7 @@ h3 {
     max-width: 200px;
     max-height: 100px;
     border-radius: 15px;
-    background: white;
+    background: #0073ff3e;
     margin: 0 auto;
     padding: 10px 0;
     -webkit-border-radius: 15px;

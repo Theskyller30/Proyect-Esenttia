@@ -13,6 +13,7 @@
     bottom: 0;
     background-color: #111111bd;
     display: flex;
+    z-index: 3;
 }
 
 .modal-container {

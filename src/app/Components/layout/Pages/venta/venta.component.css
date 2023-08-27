@@ -6,7 +6,7 @@
 }
 
 .full {
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     padding-left: 6%;
 }
@@ -21,15 +21,15 @@
 
 body {
     padding-top: 4%;
-    font-family: "Inter", sans-serif;
     background: rgb(240, 240, 240);
 }
 
 .checkbox-group {
     display: flex;
+    padding: 50px;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
@@ -37,7 +37,7 @@ body {
 }
 
 .checkbox-group>* {
-    margin: 0.5.rem 0.9rem;
+    margin: 1rem 0.9rem;
 }
 
 .checkbox-group-legend {
@@ -60,21 +60,21 @@ body {
 }
 
 .checkbox-input:checked+.checkbox-tile {
-    border-color: #FF0041;
+    border-color: #0073FF;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    color: #FF0041;
+    color: #0073FF;
 }
 
 .checkbox-input:checked+.checkbox-tile:before {
     transform: scale(1);
     opacity: 1;
-    background-color: #FF0041;
-    border-color: #FF0041;
+    background-color: #0073FF;
+    border-color: #0073FF;
 }
 
 .checkbox-input:checked+.checkbox-tile .checkbox-icon,
 .checkbox-input:checked+.checkbox-tile .checkbox-label {
-    color: #FF0041;
+    color: #0073FF;
 }
 
 .checkbox-input:focus+.checkbox-tile {
@@ -92,7 +92,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 7rem;
+    width: 20rem;
     min-height: 7rem;
     border-radius: 0.5rem;
     border: 2px solid #b5bfd9;
@@ -124,7 +124,7 @@ body {
 }
 
 .checkbox-tile:hover {
-    border-color: #FF0041;
+    border-color: #0073FF;
 }
 
 .checkbox-tile:before {
@@ -138,12 +138,16 @@ body {
 }
 
 .checkbox-icon svg {
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .checkbox-label {
     color: #707070da;
     transition: 0.375s ease;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }

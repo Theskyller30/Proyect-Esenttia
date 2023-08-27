@@ -12,6 +12,17 @@ import { Modal2Component } from './Pages/modal2/modal2.component';
 import { Modal3Component } from './Pages/modal3/modal3.component';
 import { Modal4Component } from './Pages/modal4/modal4.component';
 import { KpisComponent } from './Pages/kpis/kpis.component';
+import { VehiculosComponent } from './Pages/vehiculos/vehiculos.component';
+import { PatioComponent } from './Pages/patio/patio.component';
+import { OperacionesComponent } from './Pages/operaciones/operaciones.component';
+import { Modal5Component } from './Pages/modal5/modal5.component';
+import { ComunicacionComponent } from './Pages/comunicacion/comunicacion.component';
+import { DocumentosComponent } from './Pages/documentos/documentos.component';
+import { SeguridadComponent } from './Pages/seguridad/seguridad.component';
+import { TransporteComponent } from './Pages/transporte/transporte.component';
+import { HseComponent } from './Pages/hse/hse.component';
+import { CediComponent } from './Pages/cedi/cedi.component';
+import { SfisicaComponent } from './Pages/sfisica/sfisica.component';
 const routes: Routes = [
   {
     path: '',
@@ -22,12 +33,56 @@ const routes: Routes = [
         component: DashBoardComponent,
       },
       {
+        path: 'sfisica',
+        component: SfisicaComponent,
+      },
+      {
+        path: 'cedi',
+        component: CediComponent,
+      },
+      {
+        path: 'hse',
+        component: HseComponent,
+      },
+      {
+        path: 'transporte',
+        component: TransporteComponent,
+      },
+      {
+        path: 'seguridad',
+        component: SeguridadComponent,
+      },
+      {
+        path: 'documentos',
+        component: DocumentosComponent,
+      },
+      {
+        path: 'comunicaciones',
+        component: ComunicacionComponent,
+      },
+      {
+        path: 'operaciones',
+        component: OperacionesComponent,
+      },
+      {
+        path: 'patio',
+        component: PatioComponent,
+      },
+      {
+        path: 'vehiculos',
+        component: VehiculosComponent,
+      },
+      {
         path: 'kpis',
         component: KpisComponent,
       },
       {
         path: 'modal1',
         component: Modal1Component,
+      },
+      {
+        path: 'modal5',
+        component: Modal5Component,
       },
       {
         path: 'modal2',
