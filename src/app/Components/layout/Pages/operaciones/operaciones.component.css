@@ -29,22 +29,22 @@
 
 .card-1 {
     --color: rgb(101, 101, 101);
-    --image: url("/assets/EXPOR.jpg");
+    --image: url("https://i.ibb.co/wBGqwXz/EXPOR.jpg");
 }
 
 .card-2 {
     --color: rgb(101, 101, 101);
-    --image: url("/assets/fondoimpor.jpg");
+    --image: url("https://i.ibb.co/HDn7VVh/fondoimpor.jpg");
 }
 
 .card-3 {
     --color: rgb(101, 101, 101);
-    --image: url("/assets/CEDI.jpg");
+    --image: url("https://i.ibb.co/GsPqjYP/segu.jpg");
 }
 
 .card-4 {
     --color: rgb(101, 101, 101);
-    --image: url("/assets/BODEGAA.jpg");
+    --image: url("https://i.ibb.co/Prmp8Xj/BODEGAA.jpg");
 }
 
 a {
