@@ -24,7 +24,26 @@
     margin: 0 auto;
 }
 
-#conference-timeline .timeline-start,
+#conference-timeline .timeline-start {
+    border-radius: 12px;
+    display: table;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #0073FF;
+    padding: 12px 25px;
+    color: #fff;
+    max-width: 5%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
 #conference-timeline .timeline-end {
     border-radius: 12px;
     display: table;
@@ -34,6 +53,26 @@
     text-transform: uppercase;
     background: #0073FF;
     padding: 12px 25px;
+    color: #fff;
+    max-width: 5%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+#conference-timeline .timeline-end1 {
+    border-radius: 12px;
+    display: table;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #0073FF;
+    padding: 10px 20px;
     color: #fff;
     max-width: 5%;
     width: 100%;
@@ -230,6 +269,3 @@
 .fotter1 {
     padding-bottom: 40px;
 }
-
-
-/*===== // Resonsive Vertical Timeline =====*/

@@ -24,7 +24,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatNativeDateModule } from '@angular/material/core';
-import { MomentDateModule } from '@angular/material-moment-adapter';
+
 import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
@@ -57,7 +57,6 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatSnackBarModule,
     MatAutocompleteModule,
     MatNativeDateModule,
-    MomentDateModule
   ], providers: [
     MatDatepickerModule,
     MatNativeDateModule,

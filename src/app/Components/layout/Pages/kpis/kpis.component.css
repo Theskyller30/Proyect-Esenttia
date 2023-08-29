@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.road {
+    color: #1d1d1d;
+    font-weight: 600;
+    font-size: 30px;
+    padding-left: 51.5%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+.body1 {
+    height: 0px;
+    width: 100%;
+    background: rgb(240, 240, 240);
+    padding-top: 0%;
+}
+
+.frame {
+    padding-left: 10%;
+}

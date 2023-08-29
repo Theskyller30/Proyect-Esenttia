@@ -29,17 +29,22 @@
 
 .card-1 {
     --color: rgb(101, 101, 101);
-    --image: url("/assets/fondo1.jpg");
+    --image: url("/assets/EXPOR.jpg");
 }
 
 .card-2 {
     --color: rgb(101, 101, 101);
-    --image: url("/assets/fondo2.jpg");
+    --image: url("/assets/fondoimpor.jpg");
 }
 
 .card-3 {
     --color: rgb(101, 101, 101);
-    --image: url("/assets/fondo3.jpg");
+    --image: url("/assets/CEDI.jpg");
+}
+
+.card-4 {
+    --color: rgb(101, 101, 101);
+    --image: url("/assets/BODEGAA.jpg");
 }
 
 a {

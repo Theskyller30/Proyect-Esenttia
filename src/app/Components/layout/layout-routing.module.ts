@@ -23,6 +23,9 @@ import { TransporteComponent } from './Pages/transporte/transporte.component';
 import { HseComponent } from './Pages/hse/hse.component';
 import { CediComponent } from './Pages/cedi/cedi.component';
 import { SfisicaComponent } from './Pages/sfisica/sfisica.component';
+import { InvbodegasComponent } from './Pages/invbodegas/invbodegas.component';
+import { AnticipadoComponent } from './Pages/anticipado/anticipado.component';
+import { TimportacionComponent } from './Pages/timportacion/timportacion.component';
 const routes: Routes = [
   {
     path: '',
@@ -31,6 +34,18 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component: DashBoardComponent,
+      },
+      {
+        path: 'timportacion',
+        component: TimportacionComponent,
+      },
+      {
+        path: 'anticipado',
+        component: AnticipadoComponent,
+      },
+      {
+        path: 'invbodega',
+        component: InvbodegasComponent,
       },
       {
         path: 'sfisica',

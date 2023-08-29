@@ -25,6 +25,9 @@ import { TransporteComponent } from './Components/layout/Pages/transporte/transp
 import { HseComponent } from './Components/layout/Pages/hse/hse.component';
 import { CediComponent } from './Components/layout/Pages/cedi/cedi.component';
 import { SfisicaComponent } from './Components/layout/Pages/sfisica/sfisica.component';
+import { InvbodegasComponent } from './Components/layout/Pages/invbodegas/invbodegas.component';
+import { AnticipadoComponent } from './Components/layout/Pages/anticipado/anticipado.component';
+import { TimportacionComponent } from './Components/layout/Pages/timportacion/timportacion.component';
 
 
 
@@ -48,7 +51,10 @@ import { SfisicaComponent } from './Components/layout/Pages/sfisica/sfisica.comp
     TransporteComponent,
     HseComponent,
     CediComponent,
-    SfisicaComponent
+    SfisicaComponent,
+    InvbodegasComponent,
+    AnticipadoComponent,
+    TimportacionComponent
   ],
   imports: [
     BrowserModule,
